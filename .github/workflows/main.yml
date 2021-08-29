@@ -13,8 +13,8 @@ jobs:
       - name: Init
         run: npm install
 
-      - name: Setup
-        run: npm ci
+#      - name: Setup
+#        run: npm ci
 
       - name: Test
         run: |
