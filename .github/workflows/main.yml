@@ -10,10 +10,12 @@ jobs:
         with:
           node-version: 14.x
 
+      - name: Init
+        run: npm install
+
       - name: Setup
         run: npm ci
 
       - name: Test
         run: |
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
-
